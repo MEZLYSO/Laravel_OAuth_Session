@@ -13,6 +13,11 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
+    'google'=> [
+        'client_id'=>env('GOOGLE_CLIENTID'),
+        'client_secret'=>env('GOOGLE_CLIENTSECRET'),
+        'redirect'=>'http://sessionmanager.com/google-auth/callback',
+    ],
 
     'postmark' => [
         'key' => env('POSTMARK_API_KEY'),
